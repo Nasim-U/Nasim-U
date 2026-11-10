@@ -1,46 +1,24 @@
-<div align="center">
-  <img src="./assets/hero-banner.svg" alt="Nasim Uddin — Senior Data Scientist & Systems Builder" width="100%" />
-</div>
+# Nasim Uddin
 
-<br />
+I am a data scientist and software engineer in the UK. I build SQL pipelines, reporting dashboards, MCP servers for AI agents, and internal web tools.
 
-I architect and ship **production-grade data pipelines, executive BI systems, and deterministic AI/MCP workflows** that replace fragile spreadsheets and manual reporting with reliable, automated engineering systems.
+## What I work on
 
-My focus is **end-to-end ownership**: from raw ingestion, schema contracts, and warehouse SQL optimization through to interactive KPI studios, anomaly detection radars, and full-stack internal tools that leadership teams rely on daily.
+I help engineering, finance, and operations teams replace manual spreadsheet work with tested software:
 
----
+- Scheduled data pipelines and SQL models that reconcile billing, webhook, and product events.
+- Reporting dashboards with clear definitions for revenue, retention, and operational metrics.
+- Model Context Protocol servers and workflow automations with read-only database access and evaluation suites.
+- Full-stack internal web apps for account health, operational triage, and filtered data exports.
 
-### What I Build
+## Public projects
 
-- **End-to-End Medallion Data Pipelines & Warehouse SQL** — Idempotent Bronze/Silver/Gold pipelines, automated data quality gates, reconciliation checks, and high-performance analytical SQL across DuckDB, PostgreSQL, and BigQuery.
-- **Executive BI Studios & Decision Systems** — Sub-second KPI interfaces, cohort/retention/unit-economics models, and governed Natural-Language-to-SQL layers where every metric traces back to an auditable definition.
-- **Production MCP Servers & AI Workflow Automation** — Strictly typed Model Context Protocol (MCP) servers, guardrailed tool-calling workflows, and automated operational triage systems with deterministic schemas and audit logs.
-- **Full-Stack Data Applications & Anomaly Radars** — Custom FastAPI + Next.js/TypeScript operational apps, streaming/scheduled ingestion engines, and statistical anomaly detection for revenue and ops metrics.
+These repositories show how I structure data warehouses, agent tools, and internal web applications:
 
----
+- [`metricpulse-bi`](https://github.com/Nasim-U/metricpulse-bi) is a SaaS revenue and retention warehouse built with Python and DuckDB, with a SQLite fallback. It runs SQL staging and mart models, quarantines malformed webhook rows, checks z-score churn spikes, and serves a web dashboard with a read-only SQL explorer.
+- [`opsflow-mcp`](https://github.com/Nasim-U/opsflow-mcp) is a Model Context Protocol server built with Node.js and `node:sqlite`. It gives AI clients read-only SQL access, dataset freshness checks, weekly variance digests, and a browser-based JSON-RPC inspector with an 18-case evaluation suite.
+- [`signalstream-hq`](https://github.com/Nasim-U/signalstream-hq) is an internal account-health web app built with Node.js and SQLite in WAL mode. It ingests Stripe billing, product usage, and support webhooks idempotently, scores churn risk across four weighted factors, and exports filtered CSV reports.
 
-### Featured Engineering Systems
+## Core tools
 
-| System | Architecture & Capabilities | Core Stack |
-| :--- | :--- | :--- |
-| **[`Nasim-U/metricpulse-bi`](https://github.com/Nasim-U/metricpulse-bi)** | **MetricPulse BI** — *Medallion Data Pipeline, Automated Data Quality Engine & Natural-Language SQL Executive Studio.* End-to-end Bronze → Silver → Gold analytical warehouse with schema/freshness QA gates, semantic metric governance, and a guardrailed NL-to-SQL executive interface. | `Python` `SQL` `DuckDB` `FastAPI` `Next.js` |
-| **[`Nasim-U/opsflow-mcp`](https://github.com/Nasim-U/opsflow-mcp)** | **OpsFlow MCP** — *Production Model Context Protocol Server & Automated Analytics Workflow Kit.* Strictly typed MCP server exposing governed warehouse queries, anomaly diagnostics, and operational runbooks to AI agents with validation, rate controls, and structured telemetry. | `TypeScript` `Python` `MCP` `SQL` `CI/CD` |
-| **[`Nasim-U/signalstream-hq`](https://github.com/Nasim-U/signalstream-hq)** | **SignalStream HQ** — *Full-Stack Revenue & Operations Anomaly Radar + Automated Ingestion Pipeline.* Scheduled & event-driven ingestion engine paired with baseline forecasting, multi-dimensional Z-score/IQR drift alerts, root-cause drilldowns, and an interactive ops command center. | `Python` `FastAPI` `PostgreSQL` `TypeScript` `React` |
-
----
-
-### Tech Stack & Architecture Principles
-
-```text
-Data & Warehousing    :: Python (3.12+) · Advanced SQL · DuckDB · PostgreSQL · BigQuery · Parquet / Arrow
-Pipelines & QA        :: Medallion Architecture · Schema Contracts · Idempotent Upserts · Automated Data Quality Gates
-AI & Agent Systems    :: Model Context Protocol (MCP) · Structured Tool Calling · Guardrailed NL-to-SQL · Eval Harnesses
-Backend & Full-Stack  :: FastAPI · TypeScript · Node.js · Next.js / React · REST & WebSockets
-Ops & Reliability     :: GitHub Actions CI/CD · Pytest / Vitest · Docker · Structured Logging & Observability
-```
-
-#### Engineering Standards Every System Ships With
-1. **Zero Silent Data Corruption** — Every pipeline enforces explicit schema validation, null/uniqueness assertions, and row-count reconciliation before promoting data downstream.
-2. **Governed Metrics Over Ad-Hoc Queries** — Revenue, retention, SLA, and margin KPIs live in version-controlled SQL models—eliminating conflicting numbers across decks and dashboards.
-3. **Deterministic Guardrails Around AI** — LLMs reason and orchestrate; validated SQL templates, read-only query sandboxes, and typed MCP tools execute.
-4. **Turnkey Handover** — Reproducible environments, automated test suites, clear runbooks, and zero vendor lock-in.
+I work day to day with `Python`, `SQL`, `DuckDB`, `PostgreSQL`, `BigQuery`, `SQLite`, `TypeScript`, `Node.js`, and `MCP`. For testing and delivery, I use `Pytest`, `Docker`, and `GitHub Actions`.
